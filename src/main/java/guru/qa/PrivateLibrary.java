@@ -19,7 +19,7 @@ public class PrivateLibrary {
         Iterator<Book> iterator = books.iterator();
         do {
             Book book = iterator.next();
-            if (book.isTitle().equals(title)) {
+            if (book.getTitle().equals(title)) {
                 return true;
             }
         } while (iterator.hasNext());
@@ -29,7 +29,7 @@ public class PrivateLibrary {
     void printAllBooks() {
         System.out.println("Books in the Private Library:");
         for (Book book : books) {
-            System.out.println(book.isTitle());
+            System.out.println(book.getTitle());
         }
     }
 }

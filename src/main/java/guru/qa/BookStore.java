@@ -29,7 +29,7 @@ public class BookStore {
     void printAllBooks() {
         System.out.println("Books in the Bookstore:");
         for (Book book : books) {
-            System.out.println(book.isTitle());
+            System.out.println(book.getTitle());
         }
     }
 }

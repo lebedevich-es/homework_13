@@ -12,7 +12,15 @@ public class Book {
         this.year = year;
     }
 
-    public String isTitle() {
+    public String getTitle() {
         return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public Integer getYear() {
+        return year;
     }
 }

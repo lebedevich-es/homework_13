@@ -18,7 +18,7 @@ public class Library {
 
     boolean searchBookByTitle(String title) {
         for (int i = 0; i < books.size(); i++) {
-            if (books.get(i).isTitle().equals(title)) {
+            if (books.get(i).getTitle().equals(title)) {
                 return true;
             }
         }
@@ -32,7 +32,7 @@ public class Library {
     void printAllBooks() {
         System.out.println("Books in the Library:");
         for (Book book : books) {
-            System.out.println(book.isTitle());
+            System.out.println(book.getTitle());
         }
     }
 }

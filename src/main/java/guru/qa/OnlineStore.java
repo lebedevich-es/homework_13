@@ -17,7 +17,7 @@ public class OnlineStore {
 
     boolean searchBookByTitle(String title) {
         for(Map.Entry<String, Book> book : books.entrySet()){
-            if (book.getValue().isTitle().equals(title)) {
+            if (book.getValue().getTitle().equals(title)) {
                 return true;
             }
         }
@@ -27,7 +27,7 @@ public class OnlineStore {
     void printAllBooks() {
         System.out.println("Books in the Online Store:");
         for (Book book : books.values()) {
-            System.out.println(book.isTitle());
+            System.out.println(book.getTitle());
         }
     }
 }

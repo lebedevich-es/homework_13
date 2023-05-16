@@ -19,7 +19,7 @@ public class Main {
 
         library.printAllBooks();
 
-        System.out.println("Search in the Library: " + library.searchBookByTitle(book3.isTitle()));
+        System.out.println("Search in the Library: " + library.searchBookByTitle(book3.getTitle()));
 
 
         BookStore bookStore = new BookStore();
@@ -32,7 +32,7 @@ public class Main {
 
         bookStore.printAllBooks();
 
-        System.out.println("Search in the Bookstore: " + bookStore.searchBookByTitle(book1.isTitle()));
+        System.out.println("Search in the Bookstore: " + bookStore.searchBookByTitle(book1.getTitle()));
 
 
         PrivateLibrary privateLibrary = new PrivateLibrary();
@@ -45,7 +45,7 @@ public class Main {
 
         privateLibrary.printAllBooks();
 
-        System.out.println("Search in the Private Library: " + privateLibrary.searchBookByTitle(book3.isTitle()));
+        System.out.println("Search in the Private Library: " + privateLibrary.searchBookByTitle(book3.getTitle()));
 
 
         OnlineStore onlineStore = new OnlineStore();
@@ -58,6 +58,6 @@ public class Main {
 
         onlineStore.printAllBooks();
 
-        System.out.println("Search in the Online Store: " + onlineStore.searchBookByTitle(book4.isTitle()));
+        System.out.println("Search in the Online Store: " + onlineStore.searchBookByTitle(book4.getTitle()));
     }
 }
